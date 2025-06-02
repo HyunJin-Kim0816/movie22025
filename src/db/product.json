@@ -1,0 +1,14 @@
+{"products":[
+  {"filename":"product1.jpg",
+  "title":"A Minecraft Movie", 
+  "year":"2025"},
+  {"filename":"product2.jpg",
+  "title":"Snow White",
+  "year":"2025"},
+  {"filename":"product3.jpg",
+  "title":"Nonnas",
+  "year":"2025"},
+  {"filename":"product4.jpg",
+  "title":"The Ugly StepSister",
+  "year":"2025"}
+  ]}

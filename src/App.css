@@ -1,0 +1,127 @@
+@charset "utf-8";
+*{margin:0px;padding:0px;}
+body{
+  font-family:"맑은 고딕",arial, sans-serif;
+  font-size:13px;
+  color:#333;
+  background-color: #b8d0e7;
+}
+a{
+  color:#333;text-decoration:none;
+  font-size:16px;
+}
+ul li{list-style:none;}
+
+.loading_img{
+  width:100%;height:100%;
+  object-fit:cover;
+  position:fixed;
+  z-index:10000000;
+}
+
+.loader_icon{
+  position:fixed;
+  left:50%;top:50%;
+  transform:translate(-50%, -50%);
+
+}
+
+/* 상단헤더 서식 */
+.header{
+  width:200px;height:100%;
+  text-align:center;
+  position:fixed;
+  top:0px;left:0px;
+  z-index:100;
+}
+
+h1{padding:70px 0px 50px 0px;}
+
+.navi{line-height:40px; position:relative}
+
+.navi a{text-transform: uppercase;font-weight:bold;}
+.navi a:hover{text-decoration:underline;}
+
+/* 메인서식  */
+section{
+  width:100%;height:100%;
+  position:fixed;
+  top:0px;
+  padding-left:200px;
+  padding-top:50px;
+  overflow:scroll;
+  box-sizing:border-box;
+}
+section h2{
+  padding-top:100px;
+  text-align:center;
+}
+
+/* footer서식 */
+.footer{
+  width:100%;line-height:40px;
+  background:#333; 
+  position:fixed;
+  bottom:0px;left:0px;
+}
+.footer address{
+  color:#fff;text-align:center;
+  font-style:normal;
+}
+
+/* pc버전 */
+@media screen and (min-width:768px) {
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* 필요에 맞게 조절 */
+    background-color: #fff; /* 배경색 주는게 좋아요 */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navi {
+    display:none !important;
+    gap: 15px;
+  }
+  section {
+    padding-top: 60px; /* 헤더 높이와 맞추기 */
+  }
+}
+
+/* 내비게이션 서식 */
+.navi {
+  display: flex;           
+  justify-content: center;  
+}
+
+.navi li {
+  list-style: none;       
+  line-height: normal;      
+}
+
+.navi a {
+  display: block;          
+  padding: 10px 15px;       
+}
+
+footer{
+  background:#333;
+  color:#fff;
+  text-align:center;
+}
+footer > address{
+  line-height:50px;
+  font-style:normal;
+}

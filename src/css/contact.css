@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.contact-wrapper {
+  width: 800px;       
+  max-width: 90vw;  
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;  
+  overflow: hidden;        
+}
+.contact-section {
+  width: 100%;      
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  position: relative; 
+  right: auto;        
+  overflow: visible;  
+  height: auto;       
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.contact-form p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px 12px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical; /* textarea만 크기 조절 가능 */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #79aed4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}

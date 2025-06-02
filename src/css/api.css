@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* api.css */
+
+
+.api-wrapper {
+  width: 900px;      
+  min-height: 600px;  
+  max-height: 90vh; 
+  margin: 0px auto;  
+  padding: 20px;      
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  overflow: hidden;  
+  background-color: #fff; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.api-section {
+  right:240px;  
+  width: 70%;
+  height: auto;         
+  overflow: visible;     
+  box-sizing: border-box;
+  padding-left: 0;       
+  padding-top: 0;       
+  border: none; 
+          
+}
+
+
+.api-section h2 {
+  margin: 0 auto;
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 30px;
+}
+
+.api-section h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.api-section p {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.api-section ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.api-section ul li {
+  margin-bottom: 6px;
+  list-style-type: disc;
+}
+
+.api-section hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
+
+.api-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.api-section table thead {
+  background-color: #f0f0f0;
+}
+
+.api-section table th,
+.api-section table td {
+  padding: 17px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.api-section table th {
+  font-weight: bold;
+  color: #222;
+}
+
+.api-section table td {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 15px;
+}
+
+.api-section table td a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .api-wrapper {
+    width: 80%;            
+    margin: 20px auto;      
+    padding: 15px;           
+    text-align: center; 
+  }
+
+  .api-section {
+    background-color: #ccc;
+    right: 0px;
+    width: 100%; height: auto;             
+    padding: 0;              
+    text-align: center;      /* 전체 가운데 정렬 */
+  }
+
+  .api-section h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .api-section h3 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+
+  .api-section p,
+  .api-section ul li {
+    font-size: 14px;
+    list-style: none;
+
+    text-align: center;      /* 문단 및 리스트 가운데 */
+  }
+
+  .api-section ul {
+    padding-left: 0;         /* 왼쪽 들여쓰기 제거 */
+    list-style-position: inside;  /* 점을 안쪽으로 */
+  }
+
+  .api-section table {
+    font-size: 14px;
+    margin: 0 auto;          /* 테이블 가운데 정렬 */
+  }
+
+  .api-section table th,
+  .api-section table td {
+    padding: 12px;
+    text-align: center;      /* 셀 안의 내용도 가운데 */
+  }
+}
